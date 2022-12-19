@@ -213,8 +213,24 @@ input[type="search"] {
   }
 
   /* 모바일 새소식 */
-  .news {
+  .book {
     grid-area: 1/1/2/3;
+  }
+
+  .news{
+    grid-area: 2/1/3/3;
+  }
+
+  .board{
+    grid-area: 3/1/4/3;
+  }
+
+  .favorite{
+    grid-area: 4/1/5/3;
+  }
+
+  .twitter{
+    grid-area: 5/1/6/3;
   }
 }
 
@@ -270,6 +286,28 @@ input[type="search"] {
     font-size: 1.2rem;
     text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
   }
+
+  /* 내 스스로 해보는 데스크톱 그리드 */
+  .book {
+    grid-area: 2/1/4/13;
+  }
+
+  .news{
+    grid-area: 1/1/4/5;
+  }
+
+  .board{
+    grid-area: 3/6/4/13;
+  }
+
+  .favorite{
+    grid-area: 2/10/3/13;
+  }
+
+  .twitter{
+    grid-area: 2/5/3/10;
+  }
+  /* 내 스스로 해보는 데스크톱 그리드 끝*/
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */
