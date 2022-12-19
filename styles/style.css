@@ -101,14 +101,43 @@ input[type="search"] {
 
 /* 공통 메인 콘텐츠 섹션 제목 */
 [class*="__title"]{
-  background-color: gold;
-  font-size: 1.125rem;
+  margin-bottom: var(--spacing-base);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+[class*="__koTitle"]{
+  font-size: var(--text-md);
   font-weight: 700;
 }
 
-[class*="__enTitle"]{
-  font-size: 1rem;
-  font-weight: 400;
+.sprite{
+  background:transparent;
+  background-image: url(./../images/sprite_main.png);
+  background-repeat: no-repeat;
+  height: 3.75rem;
+  padding-left: 4rem;
+}
+
+.spriteBook{
+  background-position:0 0;
+}
+
+.spriteNews{
+  background-position:0 -230px;
+}
+
+.spriteBoard{
+  background-position:0 -115px;
+}
+
+.spriteFavorite{
+  background-position:0 -345px;
+}
+
+.spriteTwitter{
+  background-position:0 -460px;
 }
 
 
