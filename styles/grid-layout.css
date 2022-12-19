@@ -88,4 +88,8 @@ body {
       "box1 box1 box1 box1 box5 box5 box5 box5 box5 box4 box4 box4"
       "box1 box1 box1 box1 . box3 box3 box3 box3 box3 box3 box3";
   }
+  .group1 {
+    position: relative;
+    left: -50px;
+  }
 }
