@@ -99,6 +99,20 @@ input[type="search"] {
   padding: var(--spacing-base) var(--spacing-lg);
 }
 
+/* 공통 메인 콘텐츠 섹션 제목 */
+[class*="__title"]{
+  background-color: gold;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+[class*="__enTitle"]{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+
 /* 공통 추천 서적 */
 .book {
   background: lightgreen;
@@ -304,16 +318,15 @@ input[type="search"] {
 
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
-    width: var(--container-width);
+    border: 5px solid red;
+    max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid red;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "news news news news news news news news news news news news"
                          "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
                          "book book book book . board board board board board board board";
-  }
 }
 
 /* 고해상도 배경이미지 미디어쿼리 */
