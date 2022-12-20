@@ -197,7 +197,6 @@ input[type="search"] {
 
 /* 공통 새소식 */
 .news {
-  /* background: yellow; */
   grid-area: news;
 }
 
@@ -212,43 +211,47 @@ input[type="search"] {
   grid-area: board;
   display: flex;
   flex-flow: row wrap;
+  overflow: hidden;
 }
 
-/* 다연이가 한 코드 시작 */
 .board__title{
   flex: 1 1 auto;
 }
 
 .board__list{
   order: 1;
-  flex: 1 1 auto;
+  flex:1 1 auto;
   display: flex;
   flex-flow: column nowrap;
   gap: var(--spacing-sm);
+  width: 100%;
 }
 
 .board__item{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
 }
 
 .board__link{
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  background-color: pink;
+  width: calc(100% - 6.25em);
 }
 
 .board__date{
   flex: 0 0 auto;
+  background-color: skyblue;
+  width: 6.25em;
+  text-align: right;
 }
 
 .board__more{
   padding-top: var(--spacing-sm);
 }
 
-/* 다연이가 한 코드 끝 */
 
 /* 공통 인기 사이트 */
 .favorite {
@@ -437,7 +440,6 @@ input[type="search"] {
 
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
-    border: 5px solid red;
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
