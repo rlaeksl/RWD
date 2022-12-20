@@ -381,6 +381,18 @@ input[type="search"] {
       "favorite"
       "twitter";
   }
+
+  /* 모바일 인기 사이트 */  
+  .favorite__item{
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .favorite__link::after{
+    content: attr(data-tooltip);
+    color: var(--accent-favorite);
+    font-size: var(--text-sm);
+    margin-left: var(--spacing-xs);
+  }
 }
 
 /* 데스크탑 디바이스 (Desktop Device) */
@@ -458,4 +470,5 @@ input[type="search"] {
   .logo__link {
     background-image: url(./../images/webcafe-logo@2x.png);
   }
+}
 }
