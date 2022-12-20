@@ -237,13 +237,11 @@ input[type="search"] {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background-color: pink;
   width: calc(100% - 6.25em);
 }
 
 .board__date{
   flex: 0 0 auto;
-  background-color: skyblue;
   width: 6.25em;
   text-align: right;
 }
